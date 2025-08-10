@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Effective Online Publishing of Mathematical Illustrations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <meta name="theme-color" content="#000000" />
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:type" content="website"/>
+
+
+    <title>Effective Online Publishing of Mathematical Illustrations</title>
+    <meta property="og:site_name"  content="Effective Online Publishing of Mathematical Illustrations"/>
+    <meta property="og:title"      content="Effective Online Publishing of Mathematical Illustrations"/>
+    <meta property="twitter:title" content="Effective Online Publishing of Mathematical Illustrations"/>
+
+    <meta name="author" content="Scott Vorthmann"/>
+  
+    <meta name="description"             content="Technical tips for effectively sharing mathematical illustrations via blog posts and web pages"/>
+    <meta property="og:description"      content="Technical tips for effectively sharing mathematical illustrations via blog posts and web pages"/>
+    <meta property="twitter:description" content="Technical tips for effectively sharing mathematical illustrations via blog posts and web pages"/>
+
+    <meta name="keywords" content="web,sharing,mathematical,illustration,qr,url,metadata,tips"/>
+    
+    <meta property="og:image"  content="https://vorth.github.com/icerm-workshop/assets/radome.png"/>
+    <meta name="twitter:image" content="https://vorth.github.com/icerm-workshop/assets/radome.png"/>
+    
+    <meta property="og:url" content="https://vorth.github.com/icerm-workshop"/>
+    <link rel="canonical"      href="https://vorth.github.com/icerm-workshop">
+
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@mariusbongarts/previewbox/dist/article/index.min.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
@@ -21,7 +48,7 @@
 <section>
     <!-- This is the first slide -->
     <h1>Effective Online Publishing <br> of Mathematical Illustrations</h1>
-    <model-viewer src="./gltf/models/radome.gltf" camera-controls touch-action="pan-y" class="viewer">
+    <model-viewer src="./assets/radome.gltf" camera-controls touch-action="pan-y" class="viewer">
     </model-viewer>
     <footer>Scott Vorthmann</footer>
 </section>
@@ -29,72 +56,112 @@
 <section>
     <h3>Agenda</h3>
     <ul>
-      <li class="next">Context and Goals</li>
-      <li class="next">Technical Logistics</li>
-      <li class="next">Producing and Hosting 3D Models</li>
-      <li class="next">Hands-On Work</li>
+      <li class="next">Presentation: 15-20 minutes</li>
+      <li class="next">Hands-On Tutorial
+        <ul>
+          <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+          <li><a href="https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/" target="_blank">VS Code Live Server extension</a></li>
+        </ul>
+      </li>
     </ul>
     <div role="note">Some notes. They are only visible using onstage shell.</div>
 </section>
 
 <section>
-  <h3>Context and Goals</h3>
-  <ul>
-    <li>Context: blog posts with 3D interactive illustrations</li>
-    <li>Goals: each of you can...
+  <h3>Assumptions: you want to...</h3>
       <ul>
-        <li>produce a page like <a href="./gltf/index.html" target="_blank">this one</a></li>
-        <li>learn the technology tradeoffs and gotchas</li>
+        <li>produce a "blog post" like <a href="./gltf/index.html" target="_blank">this one</a>, containing one or more mathematical illustrations</li>
+        <li>share your work publicly and openly</li>
+        <li>NOT use a platform such as Wolfram, SketchFab, etc.</li>
+        <li>NOT produce a YouTube video</li>
+      </ul>
+</section>
+
+<section>
+  <h3>Goals: each of you...</h3>
+  <ul>
+    <li>can produce, host, and share a page like <a href="./gltf/index.html" target="_blank">this one</a></li>
+    <li>has resources for going further
+      <ul>(I am a resource!)</ul>
+    </li>
+  </ul>
+</section>
+
+<!-- <section>
+  <h3>The Reader Experience</h3>
+  <figure>
+    <previewbox-article href="http://127.0.0.1:5502/gltf/index.html"></previewbox-article>
+  </figure>
+</section> -->
+
+<section>
+  <h3>Sample Pages</h3>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="./gltf/index.html" target="_blank">glTF Sample Page</a></li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><a href="./x3d/index.html" target="_blank">X3D Sample Page</a></li>
       </ul>
     </li>
   </ul>
 </section>
 
 <section>
-  <h3>Tutorial Logistics</h3>
+  <h3>Sharing the URL: Social Media</h3>
+</section>
+
+<section>
+  <h3>Sharing the URL: In Person</h3>
+  <div class="share-url">
+    <div>
+      <p style="margin-block: 4rem;"></p><a href="https://tinyurl.com/icerm-sv" target="_blank" rel="noopener noreferrer">tinyurl.com/icerm-sv</a></p>
+      <p style="margin-block: 4rem;"><a href="https://github.com/vorth/icerm-workshop" target="_blank">source code</a></p>
+    </div>
+    <img src="./icerm-sv-400.png" alt="this QR code" width="270px" >
+  </div>
+</section>
+
+<section>
+  <h3>URL Shorteners</h3>
   <ul>
-    <li>These slides: <a href="https://vorth.github.io/icerm-workshop/" target="_blank">https://vorth.github.io/icerm-workshop/</a></li>
-    <li>Source: <a href="https://github.com/vorth/icerm-workshop" target="_blank">https://github.com/vorth/icerm-workshop</a></li>
-    <li>Software - install:
+    <li>Good shorteners respect privacy!</li>
+    <li><a href="http://tinyurl.com" target="_blank" rel="noopener noreferrer">TinyURL</a> is the one I trust</li>
+    <li>You can do your own research:
       <ul>
-        <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
-        <li><a href="https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/" target="_blank">VS Code Live Server extension</a></li>
+        <li><a href="https://www.google.com/search?q=best+url+shortener" target="_blank" rel="noopener noreferrer">Google search</a></li>
+        <li><a href="https://bloggingwizard.com/best-url-shorteners/" target="_blank" rel="noopener noreferrer">review blog</a></li>
       </ul>
-    </li>
-    <li>Active interaction in this webinar!</li>
   </ul>
 </section>
 
 <section>
-  <h3>X3D Sample Page</h3>
+  <h3>QR Codes</h3>
   <ul>
-    <li>
-      <ul>
-        <li><a href="./x3d/index.html" target="_blank">Rendered page</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><a href="https://github.com/vorth/icerm-workshop/blob/main/x3d/index.html" target="_blank">Source HTML</a></li>
-      </ul>
-    </li>
+    <li>Find a "clean" QR generator!</li>
+    <li>Get a mobile app that shows the URL!</li>
   </ul>
 </section>
 
 <section>
-  <h3>glTF Sample Page</h3>
+  <h3>HTTPS: Use it!</h3>
   <ul>
-    <li>
-      <ul>
-        <li><a href="./gltf/index.html" target="_blank">Rendered page</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><a href="https://github.com/vorth/icerm-workshop/blob/main/gltf/index.html" target="_blank">Source HTML</a></li>
-      </ul>
-    </li>
+    <li>HTTPS lets the user trust your URL.</li>
+    <li>Modern browsers and web users demand it!</li>
+    <li>WordPress does it for you, don't worry.</li>
+    <li>See me if you need help with your own hosting still on HTTP.</li>
   </ul>
+</section>
+
+<section>
+  <h3>Social Media Card Preview</h3>
+</section>
+
+<section>
+  <h3>Social Media Card Preview</h3>
 </section>
 
 <section>
@@ -109,16 +176,16 @@
 <section>
   <h3>Web Standards for 3D Models</h3>
   <ul>
-    <li>X3D
-      <ul>
-        <li><a href="https://www.web3d.org/x3d/what-x3d" target="_blank">Web3D Consortium X3D page</a></li>
-        <li><a href="https://create3000.github.io/x_ite/" target="_blank">X_ITE Web Component</a></li>
-      </ul>
-    </li>
     <li>glTF
       <ul>
         <li><a href="https://www.khronos.org/gltf/" target="_blank">Khronos Group glTF page</a></li>
         <li><a href="https://modelviewer.dev/" target="_blank">Google's Web Component</a></li>
+      </ul>
+    </li>
+    <li>X3D
+      <ul>
+        <li><a href="https://www.web3d.org/x3d/what-x3d" target="_blank">Web3D Consortium X3D page</a></li>
+        <li><a href="https://create3000.github.io/x_ite/" target="_blank">X_ITE Web Component</a></li>
       </ul>
     </li>
   </ul>
@@ -202,6 +269,12 @@
     margin: auto;
   }
 
+  .share-url {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: auto;
+  }
 
   section, .view head > title {
       font-size: 2rem;
@@ -246,11 +319,21 @@
     width:80%
   }
 
+  figure {
+    margin-inline: 3rem;
+    max-width: 70%;
+  }
+
   ul, ol {
       margin: 40px 100px 0 100px;
   }
 
+  li {
+    padding-block-start: 1.5rem;
+  }
+
   li > ul, ol {
+      padding-block-start: 1rem;
       margin: 0 0 15px 50px;
       list-style-image: none; /* in case parent list has some */
   }
@@ -258,11 +341,6 @@
   mark.next:not([active]) {
     visibility: visible; /* override the default behavior where next is hidden */
     background-color: inherit; /* and disable highlighting instead */
-  }
-
-  p {
-    margin: 75px 75px 0 75px;
-    font-size: 3rem;
   }
 
   table {
