@@ -31,20 +31,40 @@
 
   <link rel="stylesheet" href="../styles.css">
 
+  <!-- For Google's model-viewer web component -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+  <!-- For X_ITE's x3d-canvas web component -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/x_ite@10.5.2/dist/x_ite.min.mjs"></script>
 
 </head>
 <body>
 
   <h2>Viewing glTF Models</h2>
 
+  <p>
+    glTF is a modern, web-centric 3d file format created by <a href="https://www.khronos.org/gltf/" target="_blank">Khronos Group</a>.
+    This page shows examples of two different web components that can display 3D models in glTF format.
+  </p>
+
+  <p>
+    The first viewer is from <a href="https://modelviewer.dev/" target="_blank">Google</a>.
+  </p>
+
   <model-viewer src="../assets/radome.gltf" camera-controls touch-action="pan-y" class="viewer green">
   </model-viewer>
 
-  <p>I have more to say, and perhaps more models to discuss.</p>
+  <p>
+    The second viewer is from <a href="https://create3000.github.io/x_ite/" target="_blank">X_ITE</a>.
+  </p>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, commodi magnam aliquid placeat enim ad porro, quae quis sit, facere veritatis aut magni culpa. Id ab rerum dolor reiciendis placeat?</p>
-  
+  <x3d-canvas src="../assets/radome.gltf" class="viewer blue">
+  </x3d-canvas>
+
+  <p>
+    With this viewer, you can right-click to access full-screen and other features in a popup menu.
+  </p>
+
   <p><a href="https://github.com/vorth/icerm-workshop/blob/main/gltf/index.html" target="_blank">Source HTML</a></p>
 
 </body>
